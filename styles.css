@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 100%;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: #4d70e4;
+    color: white;
+    padding: 20px;
+}
+
+.header {
+    grid-column: 2 / 6;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    grid-column: 2 / 6;
+    grid-row: 2 / 6;
+    background-color: #c4baba;
+    padding: 20px;
+}
