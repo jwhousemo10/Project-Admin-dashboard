@@ -157,16 +157,44 @@ body {
   gap: 20px;
   padding: 20px;
   background-color: #eef1f5;
-  border: red 2px solid; /* For debugging purposes */
 }
 
-/* Projects Grid */
 .projects {
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   min-height: 400px;
-  border: red 2px solid; /* For debugging purposes */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    background-color: #f3ecec;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: #ccc 0px 2px 4px;
+}
+
+.project-card p {
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.project-card img {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+.project-icons {
+    display: flex;
 }
 
 /* Right Panel */
